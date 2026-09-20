@@ -1,0 +1,37 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.layout {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+  &__header,
+  &__aside,
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__header,
+  &__footer {
+    min-height: $size-10;
+  }
+
+  &__body {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-5;
+
+    @include media-up("lg") {
+      grid-template-columns: 1fr 280px;
+    }
+  }
+
+  &__aside {
+    @include hidden-down("lg");
+  }
+}

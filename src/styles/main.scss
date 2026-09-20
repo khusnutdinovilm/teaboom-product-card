@@ -2,6 +2,8 @@
 @use "variables" as *;
 @use "mixins" as *;
 @use "fonts" as *;
+@use "layout" as *;
+@use "container" as *;
 
 body {
   font-family: "Open sans", sans-serif;
