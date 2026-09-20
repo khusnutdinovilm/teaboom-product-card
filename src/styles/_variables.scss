@@ -1,0 +1,51 @@
+@use "sass:map";
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+$color-accent: #f9c80e;
+$color-accent-hover: #e0b400;
+
+$color-price: #e30613;
+
+$color-text: #202020;
+$color-text-on-accent: #2a2a2a;
+$color-text-secondary: #444444;
+$color-text-muted: #8a8a8a;
+
+$color-surface: #ffffff;
+$color-border: #e6e6e6;
+
+$radius-1: 2px;
+$radius-2: 4px;
+$radius-3: 8px;
+$radius-4: 12px;
+$radius-5: 16px;
+
+$size-1: 16px;
+$size-2: 20px;
+$size-3: 24px;
+$size-4: 28px;
+$size-5: 32px;
+$size-6: 36px;
+$size-7: 40px;
+$size-8: 48px;
+$size-9: 64px;
+$size-10: 72px;
+
+$spacing-1: 2px;
+$spacing-2: 4px;
+$spacing-3: 8px;
+$spacing-4: 12px;
+$spacing-5: 16px;
+$spacing-6: 24px;
+$spacing-7: 32px;
+$spacing-8: 40px;
+$spacing-9: 48px;
+$spacing-10: 64px;
