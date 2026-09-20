@@ -1,0 +1,47 @@
+@use "variables" as *;
+
+.breadcrumb {
+  &__list {
+    list-style: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-flex;
+    padding-left: $spacing-3;
+    padding-right: $spacing-2;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &::before {
+      position: absolute;
+      right: -$spacing-2;
+      top: 50%;
+      content: "";
+      width: 4px;
+      height: 1px;
+      background-color: $color-text-secondary;
+    }
+
+    &--current {
+      cursor: default;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__item,
+  &__item a {
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-text-secondary;
+  }
+}
