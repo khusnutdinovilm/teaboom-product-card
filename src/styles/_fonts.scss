@@ -1,0 +1,5 @@
+@use "mixins" as *;
+
+@include font-face("Open Sans", 400, "open-sans", "open-sans");
+@include font-face("Open Sans", 600, "open-sans", "open-sans");
+@include font-face("Open Sans", 700, "open-sans", "open-sans");
