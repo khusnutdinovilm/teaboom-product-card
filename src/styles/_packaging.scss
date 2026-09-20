@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.packaging {
+  padding: 0;
+  border: none;
+
+  &__legend {
+    margin-bottom: $spacing-3;
+    padding: 0;
+    font-weight: 600;
+  }
+
+  &__option {
+    display: inline-block;
+    position: relative;
+    margin: 0 $spacing-3 $spacing-3 0;
+  }
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  &__box {
+    display: inline-block;
+    padding: $spacing-3 $spacing-5;
+    border: 1px solid $color-border;
+    border-radius: $radius-3;
+    transition:
+      border-color 0.15s ease,
+      background-color 0.15s ease;
+  }
+
+  &__box:hover {
+    border-color: $color-accent;
+  }
+
+  &__input:checked + &__box {
+    border-color: $color-accent;
+    background-color: rgba($color-accent, 0.15);
+    font-weight: 600;
+  }
+
+  &__input:focus-visible + &__box {
+    outline: 2px solid $color-price;
+    outline-offset: 2px;
+  }
+}

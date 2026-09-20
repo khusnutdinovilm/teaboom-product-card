@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+.button {
+  display: inline-block;
+  padding: $spacing-4 $spacing-6;
+  font-size: $size-1;
+  font-weight: 600;
+  color: $color-text-on-accent;
+  background-color: $color-accent;
+  border: none;
+  border-radius: $radius-3;
+  transition:
+    background-color 0.15s ease,
+    transform 0.05s ease;
+
+  &:hover {
+    background-color: $color-accent-hover;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-price;
+    outline-offset: 2px;
+  }
+}

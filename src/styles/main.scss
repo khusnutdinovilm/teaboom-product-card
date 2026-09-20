@@ -5,7 +5,10 @@
 @use "layout" as *;
 @use "container" as *;
 @use "breadcrumb" as *;
+@use "button" as *;
+@use "packaging" as *;
+@use "product-card" as *;
 
 body {
-  font-family: "Open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
